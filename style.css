@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("./images/bg-intro-desktop.png") var(--Red);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+div.body {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1.15em;
+    margin-bottom: 25px;
+    margin-top: -13px;
+}
+section {
+    width: 49%;     
+    height: 100vh;         
+}
+section.first {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 43%;
+}
+section.second {
+    position: relative;
+    height: 100vh;
+}
+div.section-first {
+    position: absolute;
+    top: 38%;
+    right: 0;
+}
+div.section-second {
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    right: 0;
+}
+div.form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px 0px hsla(249, 10%, 26%, 0.295);
+}
+.form:active {
+    cursor: pointer;
+}
+.form > input {
+    padding: 13px;
+    padding-left: 25px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    border: 1px solid var(--Grayish-Blue);
+    color: hsla(249, 10%, 26%, 0.781);
+    font-weight: 700;
+}
+.form>input:focus {
+    border-color: var(--Dark-Blue);
+    color: var(--Dark-Blue);
+    color: #000;
+}
+.btn {
+    text-transform: uppercase;
+    background: var(--Green);
+    color: #fff;
+    padding: 13px;
+    margin-bottom: 17px;
+    text-align: center;
+    box-shadow: 0px 2px 0px 0px rgba(1, 82, 1, 0.664);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;;
+    font-weight: 700;
+}
+.blue {
+    background: var(--Blue);
+    text-transform: unset;
+    color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px;
+    margin-bottom: 17px;
+    text-align: center;
+    box-shadow: 0px 5px 0px 0px hsla(249, 10%, 26%, 0.295);
+}
+span {
+    color: var(--Red);
+}
+footer {
+    display: none;
+}
+@media screen and (max-width: 1428px){
+    section.first p {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 1285px){
+    h1 {
+        font-size: 2.5em;
+    }
+    section.first p{
+        font-size:0.8em;
+}
+@media screen and (max-width: 1029px){
+    
+    h1{
+        font-size: 2.5em;
+    }
+    div.section-first {
+        top: 35%;
+    }
+    div.section-second {
+        top: 6%;
+    }
+    section.first p {
+        font-size: 0.7em
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+        text-align: center;
+        background: url("./images/bg-intro-mobile.png") var(--Red) no-repeat;
+    }
+    div.body{
+        flex: no-flex;
+        flex-direction: column;
+        width:100%;
+
+    }
+    section {
+        width: 100vw;     
+        height: 100vh;         
+    }
+    section.first {
+        display: flex;
+        flex-direction: column;
+        flex: 1 100%;
+        color: #fff;
+        margin: 0;
+        height: 100vh;
+    }
+    section.second {
+        height: 100vh;
+    }
+    div.section-first {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+    }
+    div.section-first p {
+        padding: 0 25px;
+        font-size: 16px;
+        width: 100vw;
+    }
+    section.second {
+        margin: 0 auto;
+        width: 88.67%;
+    }
+    div.section-second {
+        width: 100%;
+    }
+    h1 {
+        font-size: 26px;
+        padding: 0 75px;
+        margin-top: 93px;
+        width: 100vw;
+        line-height: 1.3em;
+    }
+    #blue {
+        margin-top: 33px;
+        margin-bottom: 48px;
+    }
+    #blue p {
+        width: 186px;
+        line-height: 1.5em;
+        letter-spacing: 0px;
+        margin: 0 auto;
+    }
+    .form{
+        margin-bottom: 100px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
