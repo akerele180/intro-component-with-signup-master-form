@@ -141,7 +141,7 @@ footer {
         font-size: 0.7em
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 760px){
     body{
         text-align: center;
         background: url("./images/bg-intro-mobile.png") var(--Red) no-repeat;
